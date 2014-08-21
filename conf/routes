@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET           /                     controllers.Application.index(any = "none")
+
+# HTML Servering route
+GET           /views/*any           controllers.Application.loadPublicHTML(any)
+
+# Play routes to serve JSON
+GET           /api/users            controllers.Users.index
+POST          /api/users/new        controllers.Users.create
+GET           /api/users/:id        controllers.Users.show(id: String)
+POST          /api/users/:id        controllers.Users.update(id: String)
+DELETE        /api/users/:id        controllers.Users.delete(id: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET           /assets/*file         controllers.Assets.at(path="/public", file)
+
+# All unknown routes to index page
+GET           /*any                 controllers.Application.index(any)

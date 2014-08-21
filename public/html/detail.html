@@ -1,0 +1,55 @@
+<div class="col-md-4">
+    <form name="detailForm" role="form" class="form-horizontal">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" data-ng-model="user.name.first" placeholder="Enter first name" required>
+                <span data-ng-show="detailForm.firstname.$error.required" class="help-inline">Required</span>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" data-ng-model="user.name.last" placeholder="Enter last name" required>
+                <span data-ng-show="detailForm.lastname.$error.required" class="help-inline">Required</span>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="displayname">Display Name</label>
+                <input type="text" class="form-control" id="displayname" name="displayname" data-ng-model="user.displayname" placeholder="Choose Display Name" required>
+                <span data-ng-show="detailForm.displayname.$error.required" class="help-inline">Required</span>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" data-ng-model="user.email" placeholder="Enter email" required>
+                <span data-ng-show="detailForm.email.$error.required" class="help-inline">Required</span>
+                <span data-ng-show="detailForm.email.$error.url" class="help-inline">Not a valid Email</span>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="avatarurl">AvatarUrl</label>
+                <input type="url" class="form-control" id="avatarurl" name="avatarurl" data-ng-model="user.avatarurl" placeholder="Enter Avatar URL" required>
+                <span data-ng-show="detailForm.avatarurl.$error.required" class="help-inline">Required</span>
+                <span data-ng-show="detailForm.avatarurl.$error.url" class="help-inline">Not a URL</span>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="website">Website</label>
+                <input type="url" class="form-control" id="website" name="website" data-ng-model="user.website" placeholder="Enter website" required>
+                <span data-ng-show="detailForm.website.$error.required" class="help-inline">Required</span>
+                <span data-ng-show="detailForm.website.$error.url" class="help-inline">Not a URL</span>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="bio">Bio</label>
+                <textarea type="text" class="form-control" id="bio" name="bio" data-ng-model="user.bio" placeholder="Enter bio"></textarea>
+            </div>
+
+            <br />
+
+            <button data-ng-click="go('/')" class="btn btn-default">Cancel</button>
+            <button data-ng-click="save()" data-ng-disabled="noChange() || detailForm.$invalid" class="btn btn-primary">Save</button>
+            <button data-ng-click="delete()" data-ng-show="user.id.$oid" class="btn btn-danger">Delete</button>
+        </fieldset>
+    </form>
+</div>

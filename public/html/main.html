@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Display Name</th>
+            <th>Name</th>
+            <th>Website</th>
+            <th><a href="/create"><i class="glyphicon glyphicon-plus-sign"></i></a></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in users | orderBy:['name.first','name.last']">
+            <td class="pad">{{user.displayName}}</td>
+            <td class="pad">{{user.name.first}} {{user.name.last}}</td>
+            <td class="pad"><a href="{{user.website}}" target="_blank">{{user.website}}</a></td>
+            <td><a href="/edit/{{user.id.$oid}}"><i class="glyphicon glyphicon-pencil"></i></a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
