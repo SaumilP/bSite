@@ -14,7 +14,7 @@ object Application extends Controller {
   /* resolves *any into corresponding html page uri */
   def getURI(any: String): String = any match {
     case "main" => "/public/html/main.html"
-    case "profile" => "/public/html/detail.html"
+    case "detail" => "/public/html/detail.html"
     case _ => "error"
   }
 

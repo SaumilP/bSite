@@ -15,20 +15,20 @@
 
             <div class="control-group">
                 <label class="control-label" for="displayname">Display Name</label>
-                <input type="text" class="form-control" id="displayname" name="displayname" data-ng-model="user.displayname" placeholder="Choose Display Name" required>
+                <input type="text" class="form-control" id="displayname" name="displayname" data-ng-model="user.displayName" placeholder="Choose a Display Name" required>
                 <span data-ng-show="detailForm.displayname.$error.required" class="help-inline">Required</span>
             </div>
 
             <div class="control-group">
                 <label class="control-label" for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" data-ng-model="user.email" placeholder="Enter email" required>
+                <input type="email" class="form-control" id="email" name="email" data-ng-model="user.email" placeholder="Enter email">
                 <span data-ng-show="detailForm.email.$error.required" class="help-inline">Required</span>
-                <span data-ng-show="detailForm.email.$error.url" class="help-inline">Not a valid Email</span>
+                <span data-ng-show="detailForm.email.$error.email" class="help-inline">Not a valid Email</span>
             </div>
 
             <div class="control-group">
                 <label class="control-label" for="avatarurl">AvatarUrl</label>
-                <input type="url" class="form-control" id="avatarurl" name="avatarurl" data-ng-model="user.avatarurl" placeholder="Enter Avatar URL" required>
+                <input type="url" class="form-control" id="avatarurl" name="avatarurl" data-ng-model="user.avatarUrl" placeholder="Enter Avatar URL">
                 <span data-ng-show="detailForm.avatarurl.$error.required" class="help-inline">Required</span>
                 <span data-ng-show="detailForm.avatarurl.$error.url" class="help-inline">Not a URL</span>
             </div>

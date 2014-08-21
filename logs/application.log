@@ -1,19 +1,19 @@
-2014-08-21 05:50:10,639 - [INFO] - from play in pool-4-thread-3 
+2014-08-21 06:51:20,949 - [INFO] - from play in pool-5-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-08-21 05:50:19,055 - [INFO] - from application in play-internal-execution-context-1 
+2014-08-21 06:51:46,047 - [INFO] - from application in play-internal-execution-context-1 
 ReactiveMongoPlugin starting...
 
-2014-08-21 05:50:19,066 - [INFO] - from application in play-internal-execution-context-1 
+2014-08-21 06:51:46,057 - [INFO] - from application in play-internal-execution-context-1 
 ReactiveMongoPlugin successfully started with db 'playsite'! Servers:
 		[localhost:27017]
 
-2014-08-21 05:50:19,071 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-21 06:51:46,063 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2014-08-21 05:56:02,265 - [INFO] - from application in pool-4-thread-3 
+2014-08-21 06:54:37,421 - [INFO] - from application in pool-5-thread-4 
 ReactiveMongoPlugin stops, closing connections...
 
-2014-08-21 05:56:02,313 - [INFO] - from application in ForkJoinPool-2-worker-9 
+2014-08-21 06:54:37,447 - [INFO] - from application in ForkJoinPool-2-worker-5 
 ReactiveMongo Connections stopped. [Success(Closed)]
 
